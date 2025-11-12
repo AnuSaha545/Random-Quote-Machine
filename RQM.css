@@ -1,0 +1,84 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  color: #fff;
+}
+
+#quote-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  user-select: none;
+}
+
+#text {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  text-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
+
+#author {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #dcdcdc;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button, a#tweet-quote {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #764ba2;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.6rem;
+  box-shadow: 0 4px 12px rgba(118, 75, 162, 0.6);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+button:hover, a#tweet-quote:hover {
+  background: #5a3579;
+}
+
+@media (max-width: 480px) {
+  #quote-box {
+    padding: 1.5rem 2rem;
+  }
+  #text {
+    font-size: 1.3rem;
+  }
+  #author {
+    font-size: 1rem;
+  }
+  button, a#tweet-quote {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
